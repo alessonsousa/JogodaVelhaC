@@ -12,7 +12,9 @@ cout << "olá, mundo" <<endl;
 cout << "Digite um valor:";
 cin >>num;
 
-cout << "valor:",num;
 
 
+if(num >= 10){
+    cout << "Aprovado";
+}
 }
