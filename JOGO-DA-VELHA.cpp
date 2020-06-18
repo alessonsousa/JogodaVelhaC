@@ -79,7 +79,7 @@ int main()
 				disp();
 				printf("Deu VELHA!!!");
 			}*/
-		  }//fecha while teste
+		  }		//fecha while teste
 
 
 

@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int valordig;
+
 int teste1 = 1;
 int i;
 int x;
@@ -22,18 +22,24 @@ void func();
 
 int main(){
   inicial();
-
+  
 }
 
 void inicial(){
-    cout << "OPÇÕES:" << endl;
-    cout << "Iniciar - 1" << endl;
-    cout << "sair - 2" << endl;
-
-    cin >> valordig;
+    
+    int dig;
+    cout << "\t____OPÇÕES:____" << endl;
+    cout << "\t|             |" << endl;
+    cout << "\t| Iniciar - 1 |" << endl;
+    cout << "\t| Sair    - 2 |" << endl;
+    cout << "\t|_____________|" << endl;
+    
+    
+    cin >> dig;
      
-    switch(valordig){
+    switch(dig){
         case 1: 
+        tela1();
          break;
         case 2:
         break;
@@ -47,6 +53,8 @@ void tela1(){
   cout << "3" << tela[2][0] << "|" << tela[2][1] << "|" << tela[2][2] << endl;
   cout << "x" << endl;
   
+  int valor;
+  cin >> valor;
 
 
 }
@@ -100,8 +108,13 @@ if((tela[2][0] == tela[2][1]) && (tela[2][1] == tela[2][2])){
 
 void func(){
 
+ for(i = 0;i < 3; i++){
+   for(j = 0; j < 3; j++ ){
+     tela[i][j]='';
+   }
+ }
 
 
 
-  
+
 }
